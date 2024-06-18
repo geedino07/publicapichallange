@@ -5,7 +5,6 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 const API_URL = "https://www.thecocktaildb.com/api/json/v1/1"
-// "https://www.thecocktaildb.com/api/json/v1/1/random.php"
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,8 +23,6 @@ app.get("/", async (req, res) => {
         ingredient2: cocktail.drinks[0].strIngredient2,
         ingredient3: cocktail.drinks[0].strIngredient3,
     }
-    console.log(cocktail)
-    console.log(content)
     res.render("index.ejs", {data: content});
 })
 
