@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     box-sizing: border-box;
   }
   h1 {
@@ -119,5 +119,12 @@
     color: white;
     font-size: 24px;
     font-family: "Titan One", cursive;
+    margin: 10px;
+  }
+  .li {
+    color: white;
+    font-size: 18px;
+    font-family: "Titan One", cursive;
+    margin: 10px;
   }
   

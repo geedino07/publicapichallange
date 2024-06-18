@@ -16,17 +16,20 @@
   <h1><%= data.name %></h1>
   <h3><%= data.alchohol %> </h3>
    <div class="card">
+    
      <p>
        <%= data.instruction %>
      </p>
    </div>
    <p class="user"> Category: <%= data.category %></p>
    <p class="user"> Ingredients:</p>
-   <ol class="user">
+   <ul class="user li">
     <li><%= data.ingredient1 %></li>
     <li><%= data.ingredient2 %></li>
     <li><%= data.ingredient3 %></li>
-   </ol>
+   </ul>
+   <img src="<%= data.image %>" alt="image of cocktail" class="card">
+   <!-- <img src="images/whisper-img.jpg" alt="image of cocktail"> -->
    <% } else { %>
      <h1>Welcome to the Random Cocktail Recipe</h1>
   <% } %> 
